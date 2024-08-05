@@ -1,6 +1,6 @@
 .page {
   font-family: "Roboto Regular", sans-serif;
-  max-inline-size: 1920px;
+  max-inline-size: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -146,17 +146,6 @@
   animation: informatioSectionAnimation 1.5s ease;
 }
 
-@keyframes informatioSectionAnimation {
-  from {
-    opacity: 0;
-    transform: translate(-100%);
-  }
-  to {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
-
 .information__container {
   display: flex;
   justify-content: space-between;
@@ -219,5 +208,187 @@
 
 .article__main-text {
   font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
-  inline-size: 442px;
+  line-height: 23.44px;
+}
+
+.link-promo {
+  position: relative;
+  inline-size: 113px;
+  color: #69b42e;
+  font-size: clamp(1rem, 1rem + 0vw, 1rem);
+  line-height: 18px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.link-promo::after {
+  display: block;
+  position: absolute;
+  left: 0;
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #69b42e;
+  transition: width 1s;
+}
+
+.link-promo:hover::after {
+  width: 100%;
+}
+
+.information__container-buy-section {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 32px;
+}
+
+.information__container-buy-section-logo {
+  position: relative;
+}
+
+.phoneOnShield-img {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  z-index: 1;
+}
+
+.information__service-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-self: start;
+}
+
+.information__service-container-header {
+  font-weight: 500;
+  line-height: 30px;
+  font-size: clamp(1.25rem, 1.2rem + 0.25vw, 1.5rem);
+}
+
+.information__service-container-main-text {
+  color: #666666;
+  font-size: clamp(1rem, 1rem + 0vw, 1rem);
+  font-weight: 400;
+  line-height: 18.75px;
+}
+
+.information__price-container {
+  inline-size: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.price {
+  display: flex;
+  align-self: start;
+  flex-direction: column;
+}
+
+.price-old {
+  position: relative;
+  line-height: 24px;
+  color: #b3b3b3;
+  font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
+}
+
+.price-new {
+  font-size: clamp(2rem, 2rem + 0vw, 2rem);
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.price-mark {
+  font-size: clamp(0.875rem, 0.875rem + 0vw, 0.875rem);
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.price__button {
+  inline-size: 100%;
+}
+
+.benefits__section {
+  margin-block-start: 64px;
+  display: flex;
+  gap: 32px;
+  inline-size: 1170px;
+}
+
+.benefits__section-animation {
+  animation: benefitsSectionAnimation 1.5s ease;
+}
+
+.benefit-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  padding-top: 64px;
+  padding-inline: 64px;
+  background-color: #f2f2f2;
+  height: 616px;
+  inline-size: 569px;
+  border-radius: 32px;
+}
+
+.benefit-container__header {
+  font-family: "Roboto Bold";
+  font-size: clamp(1rem, 0.8rem + 1vw, 2rem);
+  font-weight: 600;
+  line-height: 37.5px;
+}
+
+.benefit-container__list-item {
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+  font-weight: 400;
+  line-height: 23.44px;
+}
+
+.benefit-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.image-animation {
+  animation: test infinite 3s ease;
+}
+
+.footer {
+  margin-block-start: 166px;
+  background-color: #212121;
+  height: 228px;
+  inline-size: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__container {
+  margin-block-start: 74px;
+  inline-size: 1168px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 12px;
+}
+
+.footer__container-header {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-text {
+  color: #c6c7c8;
+  font-size: clamp(0.875rem, 0.875rem + 0vw, 0.875rem);
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.footer__container-main-text {
+  inline-size: 368px;
 }

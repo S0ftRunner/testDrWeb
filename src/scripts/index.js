@@ -30,7 +30,13 @@ const informationSectionObserver = new IntersectionObserver((entries) => {
   });
 });
 
-
+const benefitsSectionObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("benefits__section-animation");
+    }
+  });
+});
 
 tableObserver.observe(document.querySelector(".table-img"));
 phoneObserver.observe(document.querySelector(".phone-img"));
@@ -40,3 +46,4 @@ presentationDecorationObserver.observe(
 informationSectionObserver.observe(
   document.querySelector(".information__section")
 );
+benefitsSectionObserver.observe(document.querySelector('.benefits__section'));

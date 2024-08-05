@@ -30,3 +30,37 @@
     transform: translate(0);
   }
 }
+
+@keyframes benefitsSectionAnimation {
+  from {
+    opacity: 0;
+    transform: translate(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes informatioSectionAnimation {
+  from {
+    opacity: 0;
+    transform: translate(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes test {
+  0% {
+    transform: scale(100%);
+  }
+  50% {
+    transform: scale(103%);
+  }
+  100% {
+    transform: scale(100%);
+  }
+}

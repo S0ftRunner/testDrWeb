@@ -1,10 +1,6 @@
 .page {
   font-family: "Roboto Regular", sans-serif;
   max-inline-size: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .header {
@@ -78,13 +74,17 @@
 }
 
 .section {
-  inline-size: 1140px;
+  max-inline-size: 1140px;
+  inline-size: 100%;
+  min-inline-size: 320px;
 }
 
 .android__presentation {
   position: relative;
   block-size: 587px;
-  inline-size: 1170px;
+  max-inline-size: 1170px;
+  inline-size: 100%;
+  min-inline-size: 296px;
   margin-block-start: 62px;
 }
 
@@ -99,6 +99,7 @@
 
 .table-img {
   position: absolute;
+  min-inline-size: 296px;
 }
 
 .table-img-animation {
@@ -391,4 +392,8 @@
 
 .footer__container-main-text {
   inline-size: 368px;
+}
+
+@media (width: 768px) {
+
 }

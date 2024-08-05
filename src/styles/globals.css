@@ -2,10 +2,11 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  outline: 1px solid red;
 }
 
 body {
-  min-inline-size: 375px;
+  min-inline-size: 320px;
   max-inline-size: 1920px;
   margin: 0 auto;
 }

@@ -30,9 +30,13 @@ const informationSectionObserver = new IntersectionObserver((entries) => {
   });
 });
 
+
+
 tableObserver.observe(document.querySelector(".table-img"));
 phoneObserver.observe(document.querySelector(".phone-img"));
 presentationDecorationObserver.observe(
   document.querySelector(".decoration__presentation")
 );
-informationSectionObserver.observe(document.querySelector('.information__section'));
+informationSectionObserver.observe(
+  document.querySelector(".information__section")
+);

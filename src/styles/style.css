@@ -1,7 +1,6 @@
 .page {
   font-family: "Roboto Regular", sans-serif;
   max-inline-size: 1920px;
-  inline-size: 1920px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,8 +90,16 @@
   z-index: 1;
 }
 
+.phone-img-animation {
+  animation: phoneAnimation 1s ease;
+}
+
 .table-img {
   position: absolute;
+}
+
+.table-img-animation {
+  animation: tableAnimation 1s ease;
 }
 
 .decoration__presentation {
@@ -108,6 +115,10 @@
   background-color: #69b42e;
 }
 
+.decoration__presentation-animation {
+  animation: presentationDecorationAnimation 1s ease;
+}
+
 .cover {
   position: absolute;
   background-color: #f2f2f2;
@@ -116,4 +127,32 @@
   block-size: 477px;
   z-index: -1;
   border-radius: 32px;
+}
+
+.information__section {
+  margin-block-start: 64px;
+  block-size: 658px;
+  background-color: black;
+  border-radius: 32px;
+}
+
+.information__section-animation {
+  animation: informatioSectionAnimation 1.5s ease;
+}
+
+@keyframes informatioSectionAnimation {
+  from {
+    opacity: 0;
+    transform: translate(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.information__container {
+  inline-size: 100%;
+  display: flex;
+  justify-content: space-between;
 }
